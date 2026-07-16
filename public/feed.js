@@ -2,6 +2,7 @@ const feedElement = document.querySelector("[data-feed]");
 const creditElement = document.querySelector("[data-feed-credit]");
 const refreshCountdownElement = document.querySelector("[data-feed-refresh-count]");
 const feedEndpoint = feedElement?.dataset.feedEndpoint ?? "../events/latest.json";
+const LOCAL_FEED_ENDPOINT = "../events/latest.json";
 const MARKET_TINT_CAP_XDEL = 100;
 const FEED_REFRESH_INTERVAL_MS = 30_000;
 const OFFICIAL_X_URL = "https://x.com/Indelible_XDEL";
@@ -385,15 +386,31 @@ function feedSignature(payload, events) {
   });
 }
 
+function canUseLocalFeedFallback() {
+  return ["localhost", "127.0.0.1"].includes(window.location.hostname);
+}
+
+async function fetchFeedPayload() {
+  try {
+    const response = await fetch(feedEndpoint, { cache: "no-store" });
+    if (!response.ok) throw new Error(`Feed request failed: ${response.status}`);
+    return response.json();
+  } catch (error) {
+    if (!canUseLocalFeedFallback() || feedEndpoint === LOCAL_FEED_ENDPOINT) throw error;
+
+    const response = await fetch(LOCAL_FEED_ENDPOINT, { cache: "no-store" });
+    if (!response.ok) throw new Error(`Local feed fallback failed: ${response.status}`);
+    return response.json();
+  }
+}
+
 async function loadFeed({ silent = false } = {}) {
   if (isFeedLoading) return;
 
   isFeedLoading = true;
 
   try {
-    const response = await fetch(feedEndpoint, { cache: "no-store" });
-    if (!response.ok) throw new Error(`Feed request failed: ${response.status}`);
-    const payload = await response.json();
+    const payload = await fetchFeedPayload();
     const events = Array.isArray(payload) ? payload : payload.events ?? [];
     const nextSignature = feedSignature(payload, events);
 
