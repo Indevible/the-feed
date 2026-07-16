@@ -112,6 +112,14 @@ function describeParty(party) {
   return party?.display_name ?? "unknown";
 }
 
+function describeMarketParticipant(party, market) {
+  if (!party || party.display_source === "address") {
+    return market ? `a user from ${market}` : "a user";
+  }
+
+  return describeParty(party);
+}
+
 function eventClass(event) {
   const classes = [];
 
@@ -201,14 +209,16 @@ function shouldShowOfficialProposalLink(event) {
 }
 
 function eventMeta(event) {
-  const actor = describeParty(event.parties?.actor);
   const sender = describeParty(event.parties?.sender);
   const recipient = describeParty(event.parties?.recipient);
   const amount = `${event.amount?.exact ?? "0"} ${event.token?.symbol ?? "XDEL"}`;
   const when = formatTime(event.occurred_at);
 
   if (event.parties?.market) {
-    const participant = actor !== "unknown" ? actor : recipient !== "unknown" ? recipient : sender;
+    const participant = describeMarketParticipant(
+      event.parties?.actor ?? event.parties?.recipient ?? event.parties?.sender,
+      event.parties.market
+    );
     return `${participant} spoke through ${event.parties.market} with ${amount} / ${when}`;
   }
 
