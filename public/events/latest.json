@@ -1,0 +1,1137 @@
+{
+  "schema_version": "0.1",
+  "generated_at": "2026-07-16T18:20:40.022Z",
+  "event_count": 16,
+  "events": [
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-transfer-001:0:schema:0.1:lexicon:transfer:00143",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "105.001430",
+        "atomic": "105001430",
+        "base_amount": "105",
+        "signal_field": "00143",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00143",
+        "meaning": {
+          "slug": "love-you",
+          "label": "I love you",
+          "alt_label": null,
+          "tone": "warm",
+          "visibility": "public",
+          "category": "social",
+          "scope": null,
+          "code_family": null,
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "pager-culture-curated"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "sender111111111111111111111111111111111111",
+          "display_name": "send...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "recipient11111111111111111111111111111111",
+          "display_name": "reci...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-transfer-001",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-transfer-001"
+      },
+      "occurred_at": "2026-07-15T10:00:00.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-buy-077:0:schema:0.1:lexicon:buy:07700",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "buy",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "12.077000",
+        "atomic": "12077000",
+        "base_amount": "12",
+        "signal_field": "07700",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "buy",
+        "inherited_profile": null,
+        "profile_status": "provisional",
+        "exact_match": true,
+        "code": "07700",
+        "meaning": {
+          "slug": "free-the-steed",
+          "label": "Free the Steed",
+          "alt_label": null,
+          "tone": "bullish",
+          "visibility": "public",
+          "category": "market_expression",
+          "scope": null,
+          "code_family": null,
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "buyer1111111111111111111111111111111111111",
+          "display_name": "buye...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": null,
+        "market": "pump.fun"
+      },
+      "source": {
+        "signature": "fixture-buy-077",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-buy-077"
+      },
+      "occurred_at": "2026-07-15T10:01:00.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-transfer-social-fren:0:schema:0.1:lexicon:transfer:00031",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000310",
+        "atomic": "1000310",
+        "base_amount": "1",
+        "signal_field": "00031",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00031",
+        "meaning": {
+          "slug": "fren",
+          "label": "Fren",
+          "alt_label": null,
+          "tone": "social",
+          "visibility": "public",
+          "category": "social_action",
+          "scope": null,
+          "code_family": "31",
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": {
+            "kind": "relationship_signal",
+            "action": "fren",
+            "subject": "recipient",
+            "effect": "public_gesture",
+            "binding": false
+          },
+          "governance": null,
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": "public-chain",
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "fren11111111111111111111111111111111111111",
+          "display_name": "fren...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "fren22222222222222222222222222222222222222",
+          "display_name": "fren...2222",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-transfer-social-fren",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-transfer-social-fren"
+      },
+      "occurred_at": "2026-07-15T10:01:15.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-transfer-social-little-gm:0:schema:0.1:lexicon:transfer:00047",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000470",
+        "atomic": "1000470",
+        "base_amount": "1",
+        "signal_field": "00047",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00047",
+        "meaning": {
+          "slug": "gm",
+          "label": "gm",
+          "alt_label": "Good morning",
+          "tone": "social",
+          "visibility": "public",
+          "category": "social",
+          "scope": "recipient",
+          "code_family": null,
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "pager-culture-curated"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "gm111111111111111111111111111111111111111",
+          "display_name": "gm11...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "gm222222222222222222222222222222222222222",
+          "display_name": "gm22...2222",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-transfer-social-little-gm",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-transfer-social-little-gm"
+      },
+      "occurred_at": "2026-07-15T10:01:18.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-transfer-social-big-gm:0:schema:0.1:lexicon:transfer:00048",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000480",
+        "atomic": "1000480",
+        "base_amount": "1",
+        "signal_field": "00048",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00048",
+        "meaning": {
+          "slug": "big-gm",
+          "label": "GM",
+          "alt_label": "Good morning, Feed",
+          "tone": "presence",
+          "visibility": "public",
+          "category": "social",
+          "scope": "aoe",
+          "code_family": null,
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "gmfeed111111111111111111111111111111111111",
+          "display_name": "gmfe...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "feed1111111111111111111111111111111111111",
+          "display_name": "feed...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-transfer-social-big-gm",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-transfer-social-big-gm"
+      },
+      "occurred_at": "2026-07-15T10:01:20.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-transfer-social-big-respect:0:schema:0.1:lexicon:transfer:00051",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000510",
+        "atomic": "1000510",
+        "base_amount": "1",
+        "signal_field": "00051",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00051",
+        "meaning": {
+          "slug": "big-respect",
+          "label": "Big Respect",
+          "alt_label": "Respect the Feed",
+          "tone": "presence",
+          "visibility": "public",
+          "category": "social",
+          "scope": "aoe",
+          "code_family": null,
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "respect11111111111111111111111111111111111",
+          "display_name": "resp...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "feed1111111111111111111111111111111111111",
+          "display_name": "feed...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-transfer-social-big-respect",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-transfer-social-big-respect"
+      },
+      "occurred_at": "2026-07-15T10:01:22.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-transfer-governance-yes:0:schema:0.1:lexicon:transfer:00018",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000180",
+        "atomic": "1000180",
+        "base_amount": "1",
+        "signal_field": "00018",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00018",
+        "meaning": {
+          "slug": "yes",
+          "label": "Yes",
+          "alt_label": null,
+          "tone": "governance",
+          "visibility": "public",
+          "category": "governance",
+          "scope": null,
+          "code_family": "18",
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": {
+            "kind": "stance",
+            "stance": "yes"
+          },
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "pager-culture-curated"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "voter11111111111111111111111111111111111111",
+          "display_name": "vote...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "proposal1111111111111111111111111111111111",
+          "display_name": "prop...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-transfer-governance-yes",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-transfer-governance-yes"
+      },
+      "occurred_at": "2026-07-15T10:01:30.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-proposal-open-marker:0:schema:0.1:lexicon:transfer:00065",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000650",
+        "atomic": "1000650",
+        "base_amount": "1",
+        "signal_field": "00065",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00065",
+        "meaning": {
+          "slug": "proposal-open",
+          "label": "Proposal Open",
+          "alt_label": null,
+          "tone": "governance",
+          "visibility": "public",
+          "category": "proposal_lifecycle",
+          "scope": null,
+          "code_family": "65",
+          "emoji_key": null,
+          "display_mode": "official_when_verified",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": {
+            "kind": "lifecycle",
+            "action": "open",
+            "requires_registered_sender": true
+          },
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": "public-chain",
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "CmnZ8kTM3vSvmT6kNSTLrSdUC5JWPLCxsW31WhwyGD7J",
+          "display_name": "CmnZ...GD7J",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "proposal1111111111111111111111111111111111",
+          "display_name": "prop...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-proposal-open-marker",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-proposal-open-marker"
+      },
+      "occurred_at": "2026-07-15T10:01:35.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-buy-governance-no:0:schema:0.1:lexicon:buy:01700",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "buy",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "3.017000",
+        "atomic": "3017000",
+        "base_amount": "3",
+        "signal_field": "01700",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "buy",
+        "inherited_profile": null,
+        "profile_status": "provisional",
+        "exact_match": true,
+        "code": "01700",
+        "meaning": {
+          "slug": "no",
+          "label": "No",
+          "alt_label": null,
+          "tone": "governance",
+          "visibility": "public",
+          "category": "governance",
+          "scope": null,
+          "code_family": "17",
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": {
+            "kind": "stance",
+            "stance": "no"
+          },
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "pager-culture-adapted"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "buyer3333333333333333333333333333333333333",
+          "display_name": "buye...3333",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": null,
+        "market": "pump.fun"
+      },
+      "source": {
+        "signature": "fixture-buy-governance-no",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-buy-governance-no"
+      },
+      "occurred_at": "2026-07-15T10:01:45.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-transfer-proposal-option-b:0:schema:0.1:lexicon:transfer:00062",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000620",
+        "atomic": "1000620",
+        "base_amount": "1",
+        "signal_field": "00062",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00062",
+        "meaning": {
+          "slug": "option-b",
+          "label": "Option B",
+          "alt_label": null,
+          "tone": "governance",
+          "visibility": "public",
+          "category": "governance",
+          "scope": null,
+          "code_family": "62",
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": {
+            "kind": "proposal_choice",
+            "choice": "B"
+          },
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "voter22222222222222222222222222222222222222",
+          "display_name": "vote...2222",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "proposal1111111111111111111111111111111111",
+          "display_name": "prop...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-transfer-proposal-option-b",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-transfer-proposal-option-b"
+      },
+      "occurred_at": "2026-07-15T10:01:50.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-oracle-send-it:0:schema:0.1:lexicon:transfer:00083",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000830",
+        "atomic": "1000830",
+        "base_amount": "1",
+        "signal_field": "00083",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00083",
+        "meaning": {
+          "slug": "send-it",
+          "label": "Send It",
+          "alt_label": null,
+          "tone": "degen",
+          "visibility": "public",
+          "category": "oracle_answer",
+          "scope": null,
+          "code_family": "83",
+          "emoji_key": null,
+          "display_mode": "playful",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": null,
+          "oracle": {
+            "kind": "answer",
+            "answer_type": "yes",
+            "requires_registered_responder": false
+          },
+          "preference": null,
+          "privacy_notice": null,
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "oracle111111111111111111111111111111111111",
+          "display_name": "orac...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "asker1111111111111111111111111111111111111",
+          "display_name": "aske...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-oracle-send-it",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-oracle-send-it"
+      },
+      "occurred_at": "2026-07-15T10:01:52.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-feed-on-self:0:schema:0.1:lexicon:transfer:00090",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000900",
+        "atomic": "1000900",
+        "base_amount": "1",
+        "signal_field": "00090",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00090",
+        "meaning": {
+          "slug": "feed-on",
+          "label": "Feed On",
+          "alt_label": null,
+          "tone": "control",
+          "visibility": "public",
+          "category": "feed_preference",
+          "scope": null,
+          "code_family": "90",
+          "emoji_key": null,
+          "display_mode": "control",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": null,
+          "oracle": null,
+          "preference": {
+            "kind": "feed_presentation",
+            "action": "enable_self",
+            "subject": "sender",
+            "requires_registered_sender": false
+          },
+          "privacy_notice": "public-chain",
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "userfeed1111111111111111111111111111111111",
+          "display_name": "user...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "origin111111111111111111111111111111111111",
+          "display_name": "orig...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-feed-on-self",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-feed-on-self"
+      },
+      "occurred_at": "2026-07-15T10:01:53.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-feed-grant:0:schema:0.1:lexicon:transfer:00093",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "transfer",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "1.000930",
+        "atomic": "1000930",
+        "base_amount": "1",
+        "signal_field": "00093",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "transfer",
+        "inherited_profile": null,
+        "profile_status": "stable",
+        "exact_match": true,
+        "code": "00093",
+        "meaning": {
+          "slug": "feed-grant",
+          "label": "Feed Grant",
+          "alt_label": null,
+          "tone": "control",
+          "visibility": "public",
+          "category": "feed_preference",
+          "scope": null,
+          "code_family": "93",
+          "emoji_key": null,
+          "display_mode": "control",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": null,
+          "oracle": null,
+          "preference": {
+            "kind": "feed_presentation",
+            "action": "enable_recipient",
+            "subject": "recipient",
+            "requires_registered_sender": true,
+            "recipient_can_disable_with": "00091",
+            "policy": "public_grant"
+          },
+          "privacy_notice": "public-chain",
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "CmnZ8kTM3vSvmT6kNSTLrSdUC5JWPLCxsW31WhwyGD7J",
+          "display_name": "CmnZ...GD7J",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": {
+          "address": "granted111111111111111111111111111111111",
+          "display_name": "gran...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "market": null
+      },
+      "source": {
+        "signature": "fixture-feed-grant",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-feed-grant"
+      },
+      "occurred_at": "2026-07-15T10:01:54.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-buy-proposal-option-c:0:schema:0.1:lexicon:buy:06300",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "buy",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "4.063000",
+        "atomic": "4063000",
+        "base_amount": "4",
+        "signal_field": "06300",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "buy",
+        "inherited_profile": null,
+        "profile_status": "provisional",
+        "exact_match": true,
+        "code": "06300",
+        "meaning": {
+          "slug": "option-c",
+          "label": "Option C",
+          "alt_label": null,
+          "tone": "governance",
+          "visibility": "public",
+          "category": "governance",
+          "scope": null,
+          "code_family": "63",
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": {
+            "kind": "proposal_choice",
+            "choice": "C"
+          },
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "buyer4444444444444444444444444444444444444",
+          "display_name": "buye...4444",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": null,
+        "market": "pump.fun"
+      },
+      "source": {
+        "signature": "fixture-buy-proposal-option-c",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-buy-proposal-option-c"
+      },
+      "occurred_at": "2026-07-15T10:01:55.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-sell-034:0:schema:0.1:lexicon:sell:03400",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "sell",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "5.034000",
+        "atomic": "5034000",
+        "base_amount": "5",
+        "signal_field": "03400",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "sell",
+        "inherited_profile": null,
+        "profile_status": "provisional",
+        "exact_match": true,
+        "code": "03400",
+        "meaning": {
+          "slug": "paperhanded-but-polite",
+          "label": "Paperhanded, But Polite",
+          "alt_label": null,
+          "tone": "degen",
+          "visibility": "public",
+          "category": "market_expression",
+          "scope": null,
+          "code_family": null,
+          "emoji_key": null,
+          "display_mode": "default",
+          "accessibility": null,
+          "social_action": null,
+          "governance": null,
+          "proposal": null,
+          "oracle": null,
+          "preference": null,
+          "privacy_notice": null,
+          "source": "indelible-native"
+        },
+        "warning": null,
+        "confidence": "grammar-match"
+      },
+      "parties": {
+        "sender": {
+          "address": "seller111111111111111111111111111111111111",
+          "display_name": "sell...1111",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": null,
+        "market": "pump.fun"
+      },
+      "source": {
+        "signature": "fixture-sell-034",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-sell-034"
+      },
+      "occurred_at": "2026-07-15T10:02:00.000Z"
+    },
+    {
+      "schema_version": "0.1",
+      "event_id": "solana:fixture-near-miss:0:schema:0.1:lexicon:buy:no-code",
+      "provider": "fixture",
+      "network": "solana",
+      "activity_type": "buy",
+      "relationship_status": "none",
+      "token": {
+        "symbol": "XDEL",
+        "mint": "CA2BuDpdxzuwxmoqnW37tPsYhEGhBjEjURa4oLD9pump",
+        "decimals": 6
+      },
+      "amount": {
+        "exact": "12.077010",
+        "atomic": "12077010",
+        "base_amount": "12",
+        "signal_field": "07701",
+        "sixth_decimal": "0"
+      },
+      "lexicon": {
+        "version": "0",
+        "profile": "buy",
+        "inherited_profile": null,
+        "profile_status": "provisional",
+        "exact_match": false,
+        "code": null,
+        "meaning": null,
+        "warning": "compact_market_pattern_miss",
+        "confidence": "factual-only"
+      },
+      "parties": {
+        "sender": {
+          "address": "buyer2222222222222222222222222222222222222",
+          "display_name": "buye...2222",
+          "display_source": "address",
+          "verified": false
+        },
+        "recipient": null,
+        "market": "pump.fun"
+      },
+      "source": {
+        "signature": "fixture-near-miss",
+        "event_index": 0,
+        "url": "https://solscan.io/tx/fixture-near-miss"
+      },
+      "occurred_at": "2026-07-15T10:03:00.000Z"
+    }
+  ]
+}

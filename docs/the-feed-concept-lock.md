@@ -1,10 +1,10 @@
 # The Feed — Concept Lock Specification
 
-**Status:** Working concept lock  
+**Status:** Experimental concept lock  
 **Project:** Indelible / XDEL  
 **Repository:** `Indevible/the-feed`
 
-This document records the current agreed direction for The Feed before implementation begins.
+This document records the current agreed direction for The Feed and SendSpeak while Lexicon 0, Terminal 0, and the local Feed proof of concept are being developed.
 
 ## 1. Foundational thesis
 
@@ -12,7 +12,7 @@ Digital transactions preserve movement but often lose human meaning.
 
 Indelible exists to help restore the interaction inside digital transactions.
 
-> The transaction carries value. Spendspeak carries intent.
+> The transaction carries value. SendSpeak carries intent.
 
 > The chain records the movement. The Feed restores the interaction.
 
@@ -22,7 +22,7 @@ The Feed does not create conventional token utility. It interprets activity that
 
 The Feed is a public, read-only interpretation layer for XDEL activity.
 
-It observes public XDEL transactions, normalizes them into canonical events, checks their amounts against a versioned Spendspeak lexicon, and presents the results as a live public stream.
+It observes public XDEL transactions, normalizes them into canonical events, checks their amounts against a versioned SendSpeak lexicon, and presents the results as a live public stream.
 
 The first Feed is an ivory page aligned with `xdel.net`. It begins compactly and expands to show the most recent 100 XDEL events.
 
@@ -42,9 +42,9 @@ Ordinary activity remains factual when no code is detected.
 
 Recognized activity receives an expressive interpretation while preserving the raw transaction as the authoritative record.
 
-## 4. Spendspeak
+## 4. SendSpeak
 
-Spendspeak is adaptive transactional slang encoded in XDEL amounts and translated by The Feed.
+SendSpeak is adaptive transactional slang encoded in XDEL amounts and translated by The Feed.
 
 It is a compact expressive layer for:
 
@@ -63,7 +63,7 @@ It is a compact expressive layer for:
 
 It must remain inexpensive to use.
 
-A person may send a tiny coded amount or append Spendspeak to a real transaction.
+A person may send a tiny coded amount or append SendSpeak to a real transaction.
 
 Example:
 
@@ -134,7 +134,7 @@ The first web Feed should:
 - begin with a compact recent view;
 - expand to the most recent 100 events;
 - show ordinary activity factually;
-- embellish recognized Spendspeak activity;
+- embellish recognized SendSpeak activity;
 - link each event to its public source transaction;
 - use readable identities where available;
 - fall back to a consistent shortened wallet address;
@@ -179,7 +179,7 @@ The exact schema remains open.
 
 ## 10. Lexicon architecture
 
-Spendspeak must live in versioned JSON.
+SendSpeak must live in versioned JSON.
 
 Meanings must not be hard-coded into the website or adapters.
 
@@ -318,9 +318,9 @@ The Feed must not:
 
 Its speed and playfulness are possible because it owns neither funds nor permanence.
 
-## 15. Future Spendspeak composer
+## 15. Future SendSpeak composer
 
-After the working Feed, the next likely product is a Spendspeak phrasebook and transaction calculator.
+After the working Feed, the next likely product is a SendSpeak phrasebook and transaction calculator.
 
 It may:
 
@@ -339,7 +339,7 @@ A quiet marker may eventually let official Feed adapters ignore a coded transact
 
 > Hidden from The Feed is not hidden from the chain.
 
-Spendspeak is the language. The final product name of the composer remains open.
+SendSpeak is the language. The final product name of the composer remains open.
 
 ## 16. Future governance
 
@@ -381,7 +381,7 @@ The first working objective is:
 4. display them on a live ivory page;
 5. begin with a compact recent view;
 6. expand to the latest 100 events;
-7. check each amount against a versioned draft Spendspeak JSON bundle;
+7. check each amount against a versioned draft SendSpeak JSON bundle;
 8. embellish recognized events;
 9. leave ordinary activity factual;
 10. link each event to its source transaction;
@@ -397,8 +397,8 @@ The following are currently locked at the concept level:
 - The Feed visually aligns with `xdel.net`.
 - It begins small and expands to the latest 100 events.
 - It observes transfers, buys, sells, swaps, and reciprocal activity.
-- Spendspeak is adaptive transactional slang.
-- Spendspeak meaning lives in versioned JSON.
+- SendSpeak is adaptive transactional slang.
+- SendSpeak meaning lives in versioned JSON.
 - Economic value and expression may coexist in one amount.
 - Reciprocity creates richer interaction.
 - Historical lexicons remain readable.
@@ -435,7 +435,7 @@ No code should silently settle these questions through implementation convenienc
 
 ## Closing
 
-> Spendspeak makes XDEL expressive. The Feed makes expression visible.
+> SendSpeak makes XDEL expressive. The Feed makes expression visible.
 
 > The transaction preserves movement. Indelible restores meaning.
 

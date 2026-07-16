@@ -1,0 +1,17 @@
+{
+  "name": "indelible-the-feed",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Read-only Feed event normalization and SendSpeak parsing for Indelible / XDEL.",
+  "scripts": {
+    "feed:build": "node src/feed-robot.js --provider fixture --output latest-json --output-path public/events/latest.json",
+    "feed:fixture": "node src/feed-robot.js --provider fixture --output stdout",
+    "feed:fixture:jsonl": "node src/feed-robot.js --provider fixture --output jsonl",
+    "feed:serve": "node scripts/serve-static.js --root public --port 4177",
+    "lexicon:validate": "node ../sendspeak/l0/scripts/validate-lexicon.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

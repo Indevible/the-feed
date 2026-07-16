@@ -1,6 +1,6 @@
-# Spendspeak Lexicon 0 — Grammar and Status Specification
+# SendSpeak Lexicon 0 — Grammar and Status Specification
 
-**Status:** Working implementation source of truth  
+**Status:** Experimental Lexicon 0 implementation specification  
 **Project:** Indelible / The Feed  
 **Lexicon version:** `0`
 
@@ -21,7 +21,7 @@ The Feed may display unmatched activity factually, but Lexicon 0 translates exac
 
 XDEL supports six decimal places on-chain.
 
-Lexicon 0 reads the first five digits after the decimal point as the Spendspeak signal field.
+Lexicon 0 reads the first five digits after the decimal point as the SendSpeak signal field.
 
 The sixth decimal is ignored for language interpretation but preserved in the canonical event.
 
@@ -356,4 +356,4 @@ No implementation should silently settle these questions.
 
 > Lexicon 0 translates only what it can match exactly.
 
-> The transaction remains factual. Spendspeak is the added interpretation.
+> The transaction remains factual. SendSpeak is the added interpretation.

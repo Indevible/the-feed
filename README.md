@@ -10,9 +10,11 @@ The amount still carries economic value. Appended digits may carry expression.
 
 ## Current status
 
-**Early public design**
+**Lexicon 0 proof of concept**
 
-The language, parsing rules, terminology, event classes, visual treatments, and community integrations are being defined in public. No production protocol is represented as complete.
+The language, parsing rules, terminology, event classes, visual treatments, and community integrations are experimental. No production protocol is represented as complete.
+
+Terminal 0 now acts as the first SendSpeak codebook. The Feed acts as the interpreter: it reads normalized activity and displays recognized Lexicon 0 messages from blockchain history.
 
 ## Principles
 
@@ -35,10 +37,12 @@ https://xdel.net
 
 ## Repository boundary
 
-This repository is limited to event observation, numeric-language interpretation, normalized Feed events, visual presentation, and community integrations.
+This repository is limited to event observation, numeric-language interpretation, normalized Feed events, visual presentation, and future community integrations.
+
+The SendSpeak Lexicon 0 source of truth lives in the sibling `sendspeak` repository under `l0/lexicons`.
 
 It does not contain wallet keys, transaction signing, custody logic, treasury operations, Vouch permanence mechanics, or governance over personal standing.
 
 ## First milestone
 
-The first milestone is a written transaction grammar, a normalized Feed event model, and a small provisional lexicon tested with offline examples before live indexing begins.
+The first milestone is the local proof of concept: a written transaction grammar, a normalized Feed event model, a fixture provider, Terminal 0, and a provisional Lexicon 0 tested with offline examples before live indexing begins.

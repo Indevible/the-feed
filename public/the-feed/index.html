@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Feed / SendSpeak</title>
+  <meta name="description" content="SendSpeak Lexicon 0 activity for Indelible / XDEL.">
+  <meta name="theme-color" content="#F5F2E9">
+  <link rel="stylesheet" href="../feed.css">
+</head>
+<body>
+  <main class="feed-shell" aria-label="SendSpeak Feed">
+    <div class="feed-monogram" aria-hidden="true"></div>
+    <header class="feed-header">
+      <img class="feed-glyph" src="../assets/thefeed_icon_512.png" alt="" width="512" height="512">
+      <div class="feed-title">
+        <h1>the-feed <span class="feed-refresh" data-feed-refresh aria-label="Next Feed update"><span class="feed-refresh-count" data-feed-refresh-count>30</span></span></h1>
+      </div>
+      <a class="feed-terminal-link" href="http://localhost:4178/terminal0/" aria-label="Open SendSpeak Terminal 0">
+        <img class="feed-terminal-glyph" src="../assets/terminal_icon_512.png" alt="" width="512" height="512">
+      </a>
+    </header>
+
+    <section class="feed-story" aria-label="Lexicon 0 note">
+      <p>Lexicon 0 is experimental on purpose: a first codebook for proving that simple transaction values can carry useful, playful, public meaning.</p>
+    </section>
+
+    <section class="feed-list" data-feed aria-live="polite">
+      <article class="feed-event is-loading">
+        <p class="event-label">Loading</p>
+        <h2>Reading the latest Feed.</h2>
+      </article>
+    </section>
+
+    <footer class="feed-footer">
+      <div class="footer-spec">
+        <div class="footer-copy">
+          <img class="footer-sendspeak-glyph" src="../assets/sendspeak_icon_512.png" alt="" width="512" height="512">
+          <div class="footer-details">
+            <div class="footer-title-row">
+              <strong>SendSpeak</strong>
+              <span class="lexicon-badge">Lexicon 0</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mark" aria-hidden="true">
+          <img class="footer-mark-glyph" src="../assets/indelible_mark_black_2048.png" alt="" width="2048" height="2048">
+        </div>
+        <p class="footer-tagline">The chart has subtitles.</p>
+      </div>
+    </footer>
+  </main>
+  <p class="feed-credit" data-feed-credit>Feed source: local fixture</p>
+
+  <script type="module" src="../feed.js"></script>
+</body>
+</html>
