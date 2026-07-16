@@ -1,6 +1,7 @@
 const feedElement = document.querySelector("[data-feed]");
 const creditElement = document.querySelector("[data-feed-credit]");
 const refreshCountdownElement = document.querySelector("[data-feed-refresh-count]");
+const feedEndpoint = feedElement?.dataset.feedEndpoint ?? "../events/latest.json";
 const MARKET_TINT_CAP_XDEL = 100;
 const FEED_REFRESH_INTERVAL_MS = 30_000;
 const OFFICIAL_X_URL = "https://x.com/Indelible_XDEL";
@@ -390,7 +391,7 @@ async function loadFeed({ silent = false } = {}) {
   isFeedLoading = true;
 
   try {
-    const response = await fetch("../events/latest.json", { cache: "no-store" });
+    const response = await fetch(feedEndpoint, { cache: "no-store" });
     if (!response.ok) throw new Error(`Feed request failed: ${response.status}`);
     const payload = await response.json();
     const events = Array.isArray(payload) ? payload : payload.events ?? [];
