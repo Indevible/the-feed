@@ -201,13 +201,15 @@ function shouldShowOfficialProposalLink(event) {
 }
 
 function eventMeta(event) {
+  const actor = describeParty(event.parties?.actor);
   const sender = describeParty(event.parties?.sender);
   const recipient = describeParty(event.parties?.recipient);
   const amount = `${event.amount?.exact ?? "0"} ${event.token?.symbol ?? "XDEL"}`;
   const when = formatTime(event.occurred_at);
 
   if (event.parties?.market) {
-    return `${sender} sent it through ${event.parties.market} with ${amount} / ${when}`;
+    const participant = actor !== "unknown" ? actor : recipient !== "unknown" ? recipient : sender;
+    return `${participant} spoke through ${event.parties.market} with ${amount} / ${when}`;
   }
 
   if (recipient !== "unknown") {
